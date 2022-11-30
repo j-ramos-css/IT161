@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Julio Ramos's IT161 Portal Website</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/portal.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/tables.css" />
+ </head>
+ <body>
+     <header>
+     <h1>Julio's IT161 Website</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="index.html" class="active">Welcome</a>
+       <a href="elements.html">HTML Elements</a>
+       <a href="aia.html">AIA</a>
+       <a href="big/index.html">BIG</a>
+       <a href="http://w3schools.com" target="_blank">W3 Schools</a>
+       <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
+       <a href="flowchart.html">Flowchart</a>
+       <a href="fp/index.html">Final Project</a>
+       <a href="contact.php">Contact</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+     
+    <table class="client">
+      <caption><h1>Client Information</h1></caption>
+       <tr>
+         <th>Client Name & Decision Maker</th>
+         <td>Kayla Gmyr, friend</td>
+       </tr>
+       <tr>
+         <th>Business Info and Name</th>
+         <td>Sad Girl Saga</td>
+       </tr>
+       <tr>
+         <th>Redesign or New Site</th>
+         <td>New site</td>
+       </tr>
+       <tr>
+         <th>Type of Website</th>
+         <td>
+          Portfolio, Educational, Blog.
+         </td>
+       </tr>
+       <tr>
+         <th>Client's Goals</th>
+         <td>
+          An online presence, portfolio for potential employers, blog about mental health and yoga, links to external sites like clients YouTube channel
+         </td>
+       </tr>
+  </table>
+  
+<table class="audience">
+  <caption><h1>Audience Information</h1></caption>
+  <tr>
+    <th>Audiences</th>
+    <th>Issues, Concerns, Needs</th>
+    <th>Approach</th>
+  </tr>
+  <tr>
+    <td><h3>Employers</h3>
+    <p>
+      Employers in mental health and youth work, they will have advanced web and computer navigational skills, using both MacOS or PC, with high bandwidth. 
+    </p>
+    </td>
+    <td>
+      <ul>
+       <li>Ability to see portfolio information and about me.</li>
+       <li>Contact information and location of client.</li>
+       <li>Example of client work and professionalism.</li>
+     </ul>
+    </td>
+    <td>
+     <ul>
+       <li>Create about me section with relevant portfolio information.</li>
+       <li>Create contact page for client, as well as posting the city in which she works.</li>
+       <li>Have clean UI, with easy to read sections.</li>
+      </ul>
+     </td>
+  </tr>
+  <tr>
+    <td><h3>Clients</h3>
+    <p>
+      Clients seeking mental health awareness and yoga practices will have necessary computer skills to navigate website. Generally middle-class and well off. They will use phones and laptops.
+    </p>
+    </td>	
+    <td>
+     <ul>
+       <li>Contact information.</li>
+       <li>Different types of media, such as social media linking, video and blog.</li>
+       <li>Easy navigation of site and site responsivness.</li>
+     </ul>
+    </td>
+    <td>
+        <ul>
+       <li>Have contact page for the  client on the website.</li>
+       <li>Link to various social media of client and have blog page.</li>
+       <li>Have clean and easy to use UI and responsive website.</li>
+      </ul>
+   </td>
+  </tr>
+  <tr>
+    <td><h3>Viewers</h3>
+    <p>
+      Viewers from clients YouTube will be linking into the site. Viewers usually have an understanding of the web, and have moderate web nagivation skills. Can have wide range of income. 
+    </p>
+    </td>
+    <td>
+     <ul>
+       <li>Contact information</li>
+       <li>Be able to clearly understand this is the clients website, since linking from another source.</li>
+       <li>Have action items coming from YoutTube, such as call to action elements, contact, learn more.</li>
+     </ul>
+    </td>
+    <td>
+      <ul>
+       <li>Have contact information for client.</li>
+       <li>Have clients photo in home page, as well as a quick bio.</li>
+       <li>Have buttons on home page which link to other site pages, link to other social media, have contact me button.</li>
+      </ul>
+    </td>
+   </tr>
+ </table>
+
+       
+     <footer>
+      <p><small>&copy; 2021 by 
+          <a href="contact.php">Julio Ramos</a>, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>
