@@ -64,12 +64,12 @@ section {
 
 aside {
 	width: 80%;
-	height: 200px;
+	height: 400px;
 	float: none;
 	background-color: green;
 	color: white;
 	padding: 5px;
-	margin: 10px;
+	margin: 30px;
 	/* height: 100px; */
 }
 
@@ -108,12 +108,16 @@ footer a {
 	
 	aside {
 		width: 40%;
+		height: 400px;
 		float: right;
 		background-color: green;
 		color: white;
 		padding: 5px;
-		margin: 10px;
-		/* height: 100px; */
+		margin: 30px;
+	}
+
+	.container {
+		padding-top: 30px;
 	}
 
 	.hero-img {
