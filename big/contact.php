@@ -73,6 +73,7 @@
 				<li>
 					<a id="css-checker" href="#">Check CSS</a>
 				</li>
+				<li>
 					<a href="disclaimer.html">Disclaimer</a>
 				</li>
 			</ul>
