@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-	<title>Kayla Gmyr | Home</title>
+	<title>Kayla Gmyr | Contact</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="robots" content="noindex,nofollow" />
+	<meta name="robots" content="noindex,nofollow">
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<script src="https://use.fontawesome.com/6a71565c22.js"></script>
-	<link rel="stylesheet" href="styles/nav.css" />
-	<link rel="stylesheet" href="styles/styles.css" />
+	<link rel="stylesheet" href="styles/nav.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
@@ -55,7 +56,7 @@
 
 		</section>
 		<aside class="aside-photo">
-			<img src="images/pfp1.jpg" class="desktop" alt="Desktop" />
+			<img src="images/pfp1.jpg" class="desktop" alt="Desktop">
 		</aside>	
 
 
@@ -71,6 +72,8 @@
 				</li>
 				<li>
 					<a id="css-checker" href="#">Check CSS</a>
+				</li>
+					<a href="disclaimer.html">Disclaimer</a>
 				</li>
 			</ul>
 		</footer>
