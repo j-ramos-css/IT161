@@ -1,157 +1,183 @@
-/*RESET*/
-
-html,body, nav {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    /* vertical-align: baseline; */
-}
-
-/* * {
-    box-sizing: border-box;
-} */
-
-a {
-    outline: none;
-}
-
-/*MOBILE STYLES*/
-
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: whitesmoke;
+	margin: 0;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: bold;
+html {
+	background-color: whitesmoke;
 }
 
-h1 {
-    font-size: 2em;
+form {
+	padding: 15px;
 }
 
-h2 {
-    font-size: 1.4em;
+#header {
+	padding: 20px;
+	margin: 0;
+	background-color: #eed1a5;
 }
 
-h3 {
-    font-size: 1.1em;
+#header a {
+	font-size: 25px;
+	color: black;
+	font-weight: 900;
 }
 
-.container {
-	padding-bottom: 80px;
-	padding-left: 15px;
+main.wrapper {
+	font-family: "Lato", sans-serif;
+	background-color: whitesmoke;
+	overflow: auto;
 }
 
-.hero-img {
-    display: block;
-    margin: 0;
-	padding-top: 70px;
-    width: 100%;
-	height: 250px;
-	background-color: aqua;
+h1 > a {
+	text-decoration: none;
+	color: #000;
 }
 
 section {
-	width: 80%;
-	padding: 10px;
-	float: none;
+	padding-left: 15px;
+	padding-bottom: 50px;
+	max-width: 1300px;
 }
 
-aside {
-	width: 80%;
-	height: 400px;
-	float: none;
-	background-color: green;
-	color: white;
-	padding: 5px;
-	margin: 30px;
-	/* height: 100px; */
+section > img {
+	width: 100%;
 }
 
-.bottom-content {
-	width: 80%;
-	padding: 10px;
-	float: none;
+.container{
+	margin: 0 20px;
+}
+
+.aside-photo {
+	width: 35%;
+	float: right;
+	padding: 0;
+	border-radius: 5px;
+}
+
+.aside-module {
+	margin: 20px;
+	padding: 20px;
+	width: 90%;
 	clear: both;
+	background-color: #eed1a5;
+
+}
+
+aside > ul > li > a {
+	color: white;
+}
+
+aside > h2 {
+	padding-left: 15px;
+}
+
+aside > h3 {
+	padding-left: 15px;
+}
+
+img.desktop {
+	width: 100%;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	margin: auto;
+	max-width: 98%;
+}
+
+div.embed-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 footer {
-	position: fixed;
-   	bottom: 0;
-   	width: 100%;
-	padding: 14px;
-    font-size: 12px;
 	background-color: black;
-    color: white;
-    text-align: center;
+	padding: 15px;
+	color: whitesmoke;
+	clear: both;
+	text-align: center;
+	font-size: 12px;
 }
 
 footer a {
-    text-decoration: none;
-    color: white;
+	color: whitesmoke;
+	text-decoration: none;
 }
 
-/* TABLET STYLES */
-@media only screen and (min-width: 700px) {
+footer a:hover {
+	color: deepskyblue;
+	transition: 0.2s;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+
+	main.wrapper {
+		width: 100%;
+		margin: auto;
+	}
 
 	section {
-		margin-bottom: 50px;
 		width: 50%;
-		padding: 10px;
 		float: left;
 	}
+
+	.aside-photo {
+		margin: 50px;
+	}
 	
-	aside {
-		width: 40%;
-		height: 400px;
-		float: right;
-		background-color: green;
-		color: white;
-		padding: 5px;
-		margin: 30px;
+	.aside-module {
+		margin: 40px;
+		padding: 50px;
+		width: 90%;	
 	}
 
-	.container {
-		padding-top: 30px;
+	/* Change background color of navigation on selected page */
+	ul.topnav li a.selected {
+		background-color: #ccc;
+		color: #000;
+	}
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+
+	section {
+		width: 50%;
+		float: left;
 	}
 
-	.hero-img {
-		align-content: center;
-		padding-top: 100px;
-		height: 250px;
+	/* Change background color of navigation on selected page */
+	ul.topnav li a.selected {
+		background-color: #ccc;
+		color: #000;
+	}
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+
+	body {
+		margin: auto;
 	}
 
-    h2 {
-        margin-top: 0;
-        margin-bottom: 0.8em;
-    }
-
-    h3 {
-        margin-top: 0;
-    }
-
-    ol {
-        margin-bottom: 15px;
-    }
-
-    ol li {
-        margin-left: 8px;
-    }
-
-    ul {
-        margin-bottom: 1em;
-    }
-
-    /* DESKTOP STYLES */
-    @media only screen and (min-width: 1025px) {
-
-		.hero-img {
-			padding-top: 100px;
-		}
-    }
+	.aside-photo {
+		width: 95%;
+		padding: 0;
+	}
+	
 }
